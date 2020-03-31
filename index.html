@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+  </head>
+
+	<style>
+		table {
+			font-family: arial, sans-serif;
+			border-collapse: collapse;
+			width: 100%;
+		}
+
+		td, th {
+			border: 1px solid #dddddd;
+			text-align: left;
+			padding: 8px;
+		}
+
+		th {
+      cursor: pointer;
+      text-decoration: underline;
+		}
+
+		tr:nth-child(even) {
+			background-color: #eee;
+		}
+	</style>
+
+<body>
+
+  <table id=table>
+    <thead>
+      <tr>
+        <th>Names</th>
+        <th>Ages</th>
+        <th>Price %</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Charlie</td>
+        <td>2</td>
+        <td>5%</td>
+      </tr>
+      <tr>
+        <td>Red</td>
+        <td>4</td>
+        <td>10%</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <script src="index.js"></script> 
+  <script>
+    sortable('#table', 'desc', 2)
+  </script> 
+</body>
+</html>
+
